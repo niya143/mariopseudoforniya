@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario.game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .mariomainbg {
+      width: 100%;
+      height: 100vh;
+      background-image: url("img/814007_super-mario-backgrounds_1920x1200_h.png");
+      background-size: 100% 100%;
+      position: relative;
+    }
+    .mario img {
+      position: absolute;
+      bottom: 55px;
+      animation-name: run;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes run {
+      0% {
+        left: 0%;
+      }
+      100% {
+        left: 90%;
+      }
+    }
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 2em;
+      font-family: "Rampart one", cursive;
+      letter-spacing: 1px;
+      position: absolute;
+      top: 20%;
+      left: 33%;
+      animation: mariotext 5s linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes mariotext {
+      0% {
+        font-size: 2em;
+      }
+      100% {
+        font-size: 3em;
+        left: 25%;
+        right: 25%;
+      }
+    }
+  </style>
+  <body>
+    <div class="mariomainbg">
+      <div class="mario">
+        <img src="giphy.webp" width="100px" alt="mariorun.gif" />
+        <h1>Niyaa, Babyyy lovess you😘</h1>
+      </div>
+    </div>
+  </body>
+</html>
